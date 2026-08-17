@@ -7,5 +7,9 @@ Aufgabenstellung: https://wiki.bzz.ch/modul/m323/learningunits/lu02/aufgaben/koc
 
 if __name__ == '__main__':
     # Beispiel für die Datenstruktur eines Rezepts
-    recipe_json = '{"title": "Spaghetti Bolognese", "ingredients": {"Spaghetti": 400, "Tomato Sauce": 300, "Minced Meat": 500}, "servings": 4}'
+    recipe_json = (
+        '{"title": "Spaghetti Bolognese", '
+        '"ingredients": {"Spaghetti": 400, "Tomato Sauce": 300, "Minced Meat": 500}, '
+        '"servings": 4}'
+    )
     # Dein Code kommt hier hin
