@@ -1,3 +1,8 @@
+"""Kochbuch.
+
+Aufgabenstellung: https://wiki.bzz.ch/modul/m323/learningunits/lu02/aufgaben/kochbuch
+"""
+
 # Dein Code kommt hier hin
 import json
 
@@ -43,10 +48,14 @@ def load_recipe(json_string):
 
 if __name__ == '__main__':
     # Example JSON string for a recipe
-    recipe_json = '{"title": "Spaghetti Bolognese", "ingredients": {"Spaghetti": 400, "Tomato Sauce": 300, "Minced Meat": 500}, "servings": 4}'
+    recipe_json = (
+        '{"title": "Spaghetti Bolognese", '
+        '"ingredients": {"Spaghetti": 400, "Tomato Sauce": 300, "Minced Meat": 500}, '
+        '"servings": 4}'
+    )
     # Convert JSON string to Python dictionary
-    original_recipe = load_recipe(recipe_json)
+    demo_original_recipe = load_recipe(recipe_json)
     # Adjust the recipe for 2 people
-    adjusted_recipe = adjust_recipe(original_recipe, 8)
-    print(f'Original Recipe: {original_recipe}')
-    print(f'Adjusted Recipe: {adjusted_recipe}')
+    demo_adjusted_recipe = adjust_recipe(demo_original_recipe, 8)
+    print(f'Original Recipe: {demo_original_recipe}')
+    print(f'Adjusted Recipe: {demo_adjusted_recipe}')
